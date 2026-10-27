@@ -1,0 +1,123 @@
+{
+  "categories": [
+    {
+      "id": "cspm",
+      "name": "CSPM Executive Dashboard",
+      "tab": "CSPM",
+      "alwaysShow": true,
+      "widgets": [
+        {
+          "id": "cloud-accounts",
+          "name": "Cloud Accounts",
+          "text": "2 cloud accounts are connected and 2 are not connected.",
+          "type": "donut",
+          "visible": true,
+          "center": "2",
+          "caption": "Total",
+          "startFraction": 0.5,
+          "segments": [
+            { "label": "Connected", "value": 2, "color": "#5078f8" },
+            { "label": "Not Connected", "value": 2, "color": "#e0e8f8" }
+          ]
+        },
+        {
+          "id": "cloud-risk",
+          "name": "Cloud Account Risk Assessment",
+          "text": "9659 accounts assessed. 7253 passed, 1689 failed, 681 warning, and 36 not available.",
+          "type": "donut",
+          "visible": true,
+          "caption": "Total",
+          "segments": [
+            { "label": "Failed", "value": 1689, "color": "#b81010" },
+            { "label": "Warning", "value": 681, "color": "#f0c040" },
+            { "label": "Not available", "value": 36, "color": "#d0d5dd" },
+            { "label": "Passed", "value": 7253, "color": "#18a058" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cwpp",
+      "name": "CWPP Dashboard:",
+      "tab": "CWPP",
+      "alwaysShow": true,
+      "widgets": [
+        {
+          "id": "namespace-alerts",
+          "name": "Top 5 Namespace Specific Alerts",
+          "text": "No Graph data available!",
+          "type": "empty",
+          "visible": true
+        },
+        {
+          "id": "workload-alerts",
+          "name": "Workload Alerts",
+          "text": "No Graph data available!",
+          "type": "empty",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "image",
+      "name": "Registry Scan",
+      "tab": "Image",
+      "alwaysShow": true,
+      "widgets": [
+        {
+          "id": "image-risk",
+          "name": "Image Risk Assessment",
+          "text": "1470 total vulnerabilities across container images.",
+          "type": "bar",
+          "visible": true,
+          "summaryValue": "1470",
+          "summaryLabel": "Total Vulnerabilities",
+          "segments": [
+            { "label": "Critical", "value": 9, "color": "#681008" },
+            { "label": "High", "value": 150, "color": "#c82818" },
+            { "label": "Medium", "value": 780, "color": "#e89030" },
+            { "label": "Low", "value": 531, "color": "#f0c040" }
+          ]
+        },
+        {
+          "id": "image-security",
+          "name": "Image Security Issues",
+          "text": "2 images with security issues across severity levels.",
+          "type": "bar",
+          "visible": true,
+          "summaryValue": "2",
+          "summaryLabel": "Total Images",
+          "segments": [
+            { "label": "Critical", "value": 2, "color": "#681008" },
+            { "label": "High", "value": 2, "color": "#c82818" },
+            { "label": "Medium", "value": 2, "color": "#e89030" },
+            { "label": "Low", "value": 1, "color": "#f0c040" },
+            { "label": "Unknown", "value": 1, "color": "#a8a8a8" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ticket",
+      "name": "Ticket",
+      "tab": "Ticket",
+      "alwaysShow": false,
+      "widgets": [
+        {
+          "id": "open-tickets",
+          "name": "Open Tickets",
+          "text": "12 tickets are waiting for review across production accounts.",
+          "type": "text",
+          "visible": false
+        },
+        {
+          "id": "sla-breaches",
+          "name": "SLA Breaches",
+          "text": "3 tickets crossed the response SLA in the selected time range.",
+          "type": "text",
+          "visible": false
+        }
+      ]
+    }
+  ]
+}
